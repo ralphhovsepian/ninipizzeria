@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style/style.css" />
+    <title>Nini Pizzeria</title>
+  </head>
+  <body>
+    <nav>
+      <div class="navbar">
+        <ul>
+          <li id="title">Nini Pizzeria</li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#menu">Menu</a></li>
+          <li id="shoppingcart">
+            <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+          </li>
+        </ul>
+      </div>
+      <div class="mobile">
+        <a href="#" id="mobileBtn"
+          ><i class="fa fa-bars" aria-hidden="true"></i
+        ></a>
+        <ul class="mobilenav" id="mobilenav">
+          <li id="title">Nini Pizzeria</li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#menu">Menu</a></li>
+          <li id="shoppingcart">
+            <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <div class="cart" id="cart">
+      <h1>Cart</h1>
+      <div>
+        <div id="summary">
+          <p id="pepperonisummary"></p>
+          <p id="bbqsummary"></p>
+          <p id="hawaiiansummary"></p>
+          <p id="margheritasummary"></p>
+        </div>
+
+        <p id="totalparag"></p>
+      </div>
+    </div>
+
+    <div class="intro" id="about">
+      <div class="information">
+        <h1>Order online from Nini Pizzeria!</h1>
+      </div>
+    </div>
+
+    <div class="process">
+      <h4><i class="fa fa-laptop"></i> Order your pizza</h4>
+      <h4>
+        <i class="fa fa-car" aria-hidden="true"></i> Delivery takes 45 minutes
+      </h4>
+      <h4><i class="fa fa-smile" aria-hidden="true"></i> Enjoy your meal!</h4>
+    </div>
+    <div class="menu" id="menu">
+      <h1>Menu</h1>
+      <div class="pizzas">
+        <div class="item">
+          <h3>Pizza Pepperoni $5</h3>
+          <img src="style/pepperoni.png" alt="Pepperoni" />
+          <button id="pepperoni">Add to cart</button>
+        </div>
+
+        <div class="item">
+          <h3>Hawaiian pizza $10</h3>
+          <img src="style/hawaiian.png" alt="Pepperoni" />
+          <button id="hawaiian">Add to cart</button>
+        </div>
+
+        <div class="item">
+          <h3>BBQ Chicken pizz $8</h3>
+          <img src="style/bbqchicken.png" alt="Pepperoni" />
+          <button id="bbq">Add to cart</button>
+        </div>
+
+        <div class="item">
+          <h3>Margherita Pizza $6</h3>
+          <img src="style/margherita.png" alt="Pepperoni" />
+          <button id="margherita">Add to cart</button>
+        </div>
+      </div>
+    </div>
+    <div class="payment">
+      <i class="fab fa-paypal fa-3x" aria-hidden="true"></i>
+      <i class="fa fa-credit-card fa-3x" aria-hidden="true"></i>
+      <i class="fab fa-google-wallet fa-3x" aria-hidden="true"></i>
+    </div>
+
+    <div class="footer">
+      <h1>Sign up to our newsletter!</h1>
+      <input
+        type="text"
+        name="text"
+        placeholder="Enter your email address..."
+        id="email"
+      />
+      <button>Subscribe</button>
+
+      <div class="social">
+        <i class="fab fa-facebook fa-3x" aria-hidden="true"></i>
+        <i class="fab fa-instagram fa-3x" aria-hidden="true"></i>
+      </div>
+    </div>
+    <script src="main.js"></script>
+  </body>
+</html>

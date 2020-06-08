@@ -1,0 +1,258 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@800&display=swap');
+$red: #b61314;
+$white: whitesmoke;
+$green: #d9e76c;
+body {
+  font-family: 'Open Sans', sans-serif;
+  background-color: $white;
+  color: $white;
+  margin: 0;
+  overflow-x: hidden;
+}
+
+.mobile {
+  display: none;
+  padding: 1px;
+  width: 100%;
+  height: max-content;
+  background-color: $red;
+  text-align: center;
+  #mobileBtn {
+    color: $white;
+  }
+  ul {
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  #title {
+    font-size: 20px;
+  }
+  li {
+    width: max-content;
+    padding: 10px;
+    height: 100%;
+    font-size: 20px;
+    margin: 0 auto;
+    list-style: none;
+    cursor: pointer;
+    a {
+      color: $white;
+      text-decoration: none;
+    }
+  }
+  li:hover:not(#shoppingcart) {
+    color: #1b1b1b;
+    border: 4px solid #1b1b1b;
+    border-radius: 2px;
+  }
+  #shoppingcart {
+    i {
+      color: $green;
+    }
+  }
+}
+
+.navbar {
+  padding: 1px;
+  width: 100%;
+  height: max-content;
+  background-color: $red;
+
+  ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  #title {
+    font-size: 25px;
+  }
+  li {
+    width: max-content;
+    padding: 10px;
+    height: 100%;
+    font-size: 20px;
+    margin: 0 20px;
+    list-style: none;
+    cursor: pointer;
+    a {
+      color: $white;
+      text-decoration: none;
+    }
+  }
+  li:hover:not(#shoppingcart) {
+    color: #1b1b1b;
+    border: 4px solid #1b1b1b;
+    border-radius: 2px;
+  }
+  #shoppingcart {
+    i {
+      color: $green;
+    }
+  }
+}
+
+.intro {
+  color: $white;
+  padding: 1px;
+  width: 100%;
+  height: 500px;
+  background-image: url(./pizzeria.jpg);
+  display: flex;
+  justify-content: flex-end;
+  flex-wrap: wrap;
+  .information {
+    width: 50%;
+    height: 100px;
+    font-size: 30px;
+    border-radius: 4px;
+    text-align: center;
+  }
+}
+
+.process {
+  width: 100%;
+  height: 90px;
+  background-color: $white;
+  color: #1b1b1b;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+
+@media screen and (max-width: 600px) {
+  .navbar {
+    ul {
+      display: none;
+      flex-direction: column;
+    }
+  }
+  .mobile {
+    display: block;
+  }
+}
+
+@media screen and (max-width: 990px) {
+  .intro {
+    justify-content: center;
+  }
+}
+
+.menu {
+  color: #1b1b1b;
+  background-color: #f2d398;
+  width: 100%;
+  min-height: 500px;
+  max-height: max-content;
+  h1 {
+    text-align: center;
+  }
+  .pizzas {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+  }
+  .item {
+    margin: 10px;
+    img {
+      width: 200px;
+      height: 120px;
+      margin-left: 15%;
+    }
+    h3 {
+      text-align: center;
+    }
+    background-color: $white;
+    width: max-content;
+    height: max-content;
+    border-radius: 6px;
+    button {
+      font-family: 'Open Sans', sans-serif;
+      color: $white;
+      width: 100%;
+      height: max-content;
+      background-color: $red;
+      border: 0;
+      border-radius: 2px;
+      cursor: pointer;
+    }
+  }
+}
+
+.payment {
+  margin: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  color: #1b1b1b;
+}
+
+.footer {
+  width: 100%;
+  height: 370px;
+  background-color: $red;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  h1 {
+    text-align: center;
+  }
+  input {
+    width: 50%;
+    margin: 0 auto;
+    height: 50px;
+    border: 0;
+    border-radius: 4px;
+  }
+  button {
+    font-family: 'Open Sans', sans-serif;
+    color: $white;
+    width: 20%;
+    margin: 4px auto;
+    height: 50px;
+    border: 0;
+    border-radius: 4px;
+    background-color: #1b1b1b;
+    cursor: pointer;
+  }
+  button:hover {
+    opacity: 0.8;
+  }
+  .social {
+    margin: 20px auto;
+  }
+}
+
+.cart {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 57%;
+  top: 10%;
+  width: 40%;
+  min-height: 40%;
+  max-height: max-content;
+  background-color: $white;
+  border-radius: 4px;
+  color: #1b1b1b;
+  text-align: center;
+  img {
+    width: 50px;
+    height: 50px;
+  }
+  #totalparag {
+    width: 100%;
+    height: max-content;
+    background-color: rgb(214, 212, 212);
+  }
+  #summary {
+    p {
+      margin: 0;
+    }
+  }
+}
